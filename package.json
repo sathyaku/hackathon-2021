@@ -1,0 +1,73 @@
+{
+  "name": "next-boiler-plate",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development next",
+    "build": "NODE_ENV=production next build",
+    "start": "cross-env NODE_ENV=production next start",
+    "lint:script": "eslint . -c .eslintrc.json --ext js,jsx --fix",
+    "lint:style": "stylelint '**/*.style.js'",
+    "lint": "npm run lint:script && npm run lint:style",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "analyze": "cross-env ANALYZE=true next build",
+    "serve": "serve .next/analyze"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^11.1.2",
+    "axios": "^0.21.4",
+    "constate": "^3.3.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "faker": "^5.5.3",
+    "lodash.get": "^4.4.2",
+    "lost": "^8.3.1",
+    "next": "^11.0.1",
+    "next-pwa": "^5.3.1",
+    "postcss": "^8.3.6",
+    "postcss-import": "^14.0.2",
+    "postcss-mixins": "^8.1.0",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3",
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-jsx": "^4.0.0",
+    "styled-jsx-plugin-postcss": "^4.0.1",
+    "swr": "^1.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-react": "^7.14.5",
+    "@styled-jsx/plugin-sass": "^3.0.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.11.0",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-next": "^0.2.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.25.0",
+    "husky": "^7.0.2",
+    "jest": "^27.1.0",
+    "jsdom": "17.0.0",
+    "jsdom-global": "3.0.2",
+    "prettier": "^2.3.2",
+    "sass": "^1.32.8",
+    "serve": "^12.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Container should render Login 1`] = `
+"<LoginContainer labels={{...}}>
+  <div className=\\"jsx-3109774058 container\\">
+    <h1 className=\\"jsx-3109774058\\">
+       
+      User Login
+       
+    </h1>
+    <div className=\\"jsx-3109774058 login\\">
+      <form className=\\"jsx-3109774058\\">
+        <label htmlFor=\\"email\\" className=\\"jsx-3109774058\\">
+          Email
+        </label>
+        <input type=\\"text\\" id=\\"email\\" name=\\"email\\" value=\\"\\" onChange={[Function: onChange]} className=\\"jsx-3109774058\\" />
+        <label htmlFor=\\"password\\" className=\\"jsx-3109774058\\">
+          Password
+        </label>
+        <input type=\\"password\\" id=\\"password\\" name=\\"password\\" value=\\"\\" onChange={[Function: onChange]} className=\\"jsx-3109774058\\" />
+        <button id=\\"loginButton\\" type=\\"button\\" onClick={[Function: handleSubmit]} className=\\"jsx-3109774058 btn\\">
+          Login
+        </button>
+      </form>
+    </div>
+    <JSXStyle id=\\"3109774058\\" />
+  </div>
+</LoginContainer>"
+`;

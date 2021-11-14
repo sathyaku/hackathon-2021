@@ -1,0 +1,10 @@
+.podImage {
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+  transition: 0.3s;
+}
+
+.podImage:hover {
+  transform: scale(1.2);
+}

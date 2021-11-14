@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title Component should render without crashing 1`] = `
+"<LayoutContainer>
+  <div className=\\"jsx-678447535 hello\\">
+    <p className=\\"jsx-678447535\\">
+      Hello World
+    </p>
+    <a href=\\"/about\\" className=\\"jsx-678447535\\">
+       go to about 
+    </a>
+    <JSXStyle id=\\"678447535\\" />
+  </div>
+</LayoutContainer>"
+`;
